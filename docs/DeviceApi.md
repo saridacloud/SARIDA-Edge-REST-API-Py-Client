@@ -1,11 +1,13 @@
 # swagger_client.DeviceApi
 
-All URIs are relative to *https://virtserver.swaggerhub.com/esicteam/SaridaEdgeAPI/1.2*
+All URIs are relative to *https://virtserver.swaggerhub.com/esicteam/SaridaEdgeAPI/1.4*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**control_device_restart_post**](DeviceApi.md#control_device_restart_post) | **POST** /control/device/restart | 
 [**control_device_shutdown_post**](DeviceApi.md#control_device_shutdown_post) | **POST** /control/device/shutdown | 
+[**control_video_player_start_post**](DeviceApi.md#control_video_player_start_post) | **POST** /control/videoPlayer/start | 
+[**control_video_player_stop_post**](DeviceApi.md#control_video_player_stop_post) | **POST** /control/videoPlayer/stop | 
 [**web_hook_delete**](DeviceApi.md#web_hook_delete) | **DELETE** /webHook | 
 [**web_hook_detection_updates_post**](DeviceApi.md#web_hook_detection_updates_post) | **POST** /webHook/detectionUpdates | 
 [**web_hook_get**](DeviceApi.md#web_hook_get) | **GET** /webHook | 
@@ -74,6 +76,90 @@ try:
     api_instance.control_device_shutdown_post()
 except ApiException as e:
     print("Exception when calling DeviceApi->control_device_shutdown_post: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_start_post**
+> control_video_player_start_post()
+
+
+
+Start video player
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+
+try:
+    api_instance.control_video_player_start_post()
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_start_post: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_stop_post**
+> control_video_player_stop_post()
+
+
+
+Stop video player
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+
+try:
+    api_instance.control_video_player_stop_post()
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_stop_post: %s\n" % e)
 ```
 
 ### Parameters

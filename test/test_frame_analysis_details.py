@@ -15,12 +15,12 @@ from __future__ import absolute_import
 import unittest
 
 import swagger_client
-from swagger_client.models.analysis_result import AnalysisResult  # noqa: E501
+from swagger_client.models.frame_analysis_details import FrameAnalysisDetails  # noqa: E501
 from swagger_client.rest import ApiException
 
 
-class TestAnalysisResult(unittest.TestCase):
-    """AnalysisResult unit test stubs"""
+class TestFrameAnalysisDetails(unittest.TestCase):
+    """FrameAnalysisDetails unit test stubs"""
 
     def setUp(self):
         pass
@@ -28,10 +28,10 @@ class TestAnalysisResult(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testAnalysisResult(self):
-        """Test AnalysisResult"""
+    def testFrameAnalysisDetails(self):
+        """Test FrameAnalysisDetails"""
         # FIXME: construct object with mandatory attributes with example values
-        # model = swagger_client.models.analysis_result.AnalysisResult()  # noqa: E501
+        # model = swagger_client.models.frame_analysis_details.FrameAnalysisDetails()  # noqa: E501
         pass
 
 

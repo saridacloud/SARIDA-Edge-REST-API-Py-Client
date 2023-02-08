@@ -1,6 +1,6 @@
 # swagger_client.GUIApi
 
-All URIs are relative to *https://virtserver.swaggerhub.com/esicteam/SaridaEdgeAPI/1.2*
+All URIs are relative to *https://virtserver.swaggerhub.com/esicteam/SaridaEdgeAPI/1.4*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
