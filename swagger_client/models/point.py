@@ -42,10 +42,8 @@ class Point(object):
         self._x = None
         self._y = None
         self.discriminator = None
-        if x is not None:
-            self.x = x
-        if y is not None:
-            self.y = y
+        self.x = x
+        self.y = y
 
     @property
     def x(self):
@@ -67,6 +65,8 @@ class Point(object):
         :param x: The x of this Point.  # noqa: E501
         :type: int
         """
+        if x is None:
+            raise ValueError("Invalid value for `x`, must not be `None`")  # noqa: E501
 
         self._x = x
 
@@ -90,6 +90,8 @@ class Point(object):
         :param y: The y of this Point.  # noqa: E501
         :type: int
         """
+        if y is None:
+            raise ValueError("Invalid value for `y`, must not be `None`")  # noqa: E501
 
         self._y = y
 

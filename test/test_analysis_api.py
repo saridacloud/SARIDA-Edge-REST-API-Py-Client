@@ -46,6 +46,12 @@ class TestAnalysisApi(unittest.TestCase):
         """
         pass
 
+    def test_analysis_video_resolution_get(self):
+        """Test case for analysis_video_resolution_get
+
+        """
+        pass
+
 
 if __name__ == '__main__':
     unittest.main()

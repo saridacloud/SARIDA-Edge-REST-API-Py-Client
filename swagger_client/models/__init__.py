@@ -36,4 +36,5 @@ from swagger_client.models.point import Point
 from swagger_client.models.polygon import Polygon
 from swagger_client.models.running_states import RunningStates
 from swagger_client.models.section_base_data import SectionBaseData
+from swagger_client.models.size import Size
 from swagger_client.models.web_hook_properties import WebHookProperties
