@@ -6,6 +6,10 @@ Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**control_device_restart_post**](DeviceApi.md#control_device_restart_post) | **POST** /control/device/restart | 
 [**control_device_shutdown_post**](DeviceApi.md#control_device_shutdown_post) | **POST** /control/device/shutdown | 
+[**control_video_player_current_frame_no_get**](DeviceApi.md#control_video_player_current_frame_no_get) | **GET** /control/videoPlayer/currentFrameNo | Return the current frame number of the video player.
+[**control_video_player_current_frame_no_put**](DeviceApi.md#control_video_player_current_frame_no_put) | **PUT** /control/videoPlayer/currentFrameNo | Set the current frame number for the video player.
+[**control_video_player_running_get**](DeviceApi.md#control_video_player_running_get) | **GET** /control/videoPlayer/running | Return true if the video player is running, otherwise false.
+[**control_video_player_running_put**](DeviceApi.md#control_video_player_running_put) | **PUT** /control/videoPlayer/running | Start or pause the video player
 [**control_video_player_start_post**](DeviceApi.md#control_video_player_start_post) | **POST** /control/videoPlayer/start | 
 [**control_video_player_stop_post**](DeviceApi.md#control_video_player_stop_post) | **POST** /control/videoPlayer/stop | 
 [**web_hook_delete**](DeviceApi.md#web_hook_delete) | **DELETE** /webHook | 
@@ -92,6 +96,180 @@ No authorization required
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_current_frame_no_get**
+> int control_video_player_current_frame_no_get()
+
+Return the current frame number of the video player.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+
+try:
+    # Return the current frame number of the video player.
+    api_response = api_instance.control_video_player_current_frame_no_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_current_frame_no_get: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**int**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_current_frame_no_put**
+> control_video_player_current_frame_no_put(body)
+
+Set the current frame number for the video player.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+body = 56 # int | Send the frame number as a integer to set the videoplayer to this postion.
+
+try:
+    # Set the current frame number for the video player.
+    api_instance.control_video_player_current_frame_no_put(body)
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_current_frame_no_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**int**](int.md)| Send the frame number as a integer to set the videoplayer to this postion. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_running_get**
+> bool control_video_player_running_get()
+
+Return true if the video player is running, otherwise false.
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+
+try:
+    # Return true if the video player is running, otherwise false.
+    api_response = api_instance.control_video_player_running_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_running_get: %s\n" % e)
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**bool**
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json, application/xml
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **control_video_player_running_put**
+> control_video_player_running_put(body)
+
+Start or pause the video player
+
+### Example
+```python
+from __future__ import print_function
+import time
+import swagger_client
+from swagger_client.rest import ApiException
+from pprint import pprint
+
+# create an instance of the API class
+api_instance = swagger_client.DeviceApi()
+body = True # bool | Send true to start the video player, selnd false to pause it.
+
+try:
+    # Start or pause the video player
+    api_instance.control_video_player_running_put(body)
+except ApiException as e:
+    print("Exception when calling DeviceApi->control_video_player_running_put: %s\n" % e)
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**bool**](bool.md)| Send true to start the video player, selnd false to pause it. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: application/json, application/xml
  - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)

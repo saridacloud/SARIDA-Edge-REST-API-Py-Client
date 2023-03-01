@@ -103,6 +103,10 @@ Class | Method | HTTP request | Description
 *CameraApi* | [**camera_state_put**](docs/CameraApi.md#camera_state_put) | **PUT** /camera/state | 
 *DeviceApi* | [**control_device_restart_post**](docs/DeviceApi.md#control_device_restart_post) | **POST** /control/device/restart | 
 *DeviceApi* | [**control_device_shutdown_post**](docs/DeviceApi.md#control_device_shutdown_post) | **POST** /control/device/shutdown | 
+*DeviceApi* | [**control_video_player_current_frame_no_get**](docs/DeviceApi.md#control_video_player_current_frame_no_get) | **GET** /control/videoPlayer/currentFrameNo | Return the current frame number of the video player.
+*DeviceApi* | [**control_video_player_current_frame_no_put**](docs/DeviceApi.md#control_video_player_current_frame_no_put) | **PUT** /control/videoPlayer/currentFrameNo | Set the current frame number for the video player.
+*DeviceApi* | [**control_video_player_running_get**](docs/DeviceApi.md#control_video_player_running_get) | **GET** /control/videoPlayer/running | Return true if the video player is running, otherwise false.
+*DeviceApi* | [**control_video_player_running_put**](docs/DeviceApi.md#control_video_player_running_put) | **PUT** /control/videoPlayer/running | Start or pause the video player
 *DeviceApi* | [**control_video_player_start_post**](docs/DeviceApi.md#control_video_player_start_post) | **POST** /control/videoPlayer/start | 
 *DeviceApi* | [**control_video_player_stop_post**](docs/DeviceApi.md#control_video_player_stop_post) | **POST** /control/videoPlayer/stop | 
 *DeviceApi* | [**web_hook_delete**](docs/DeviceApi.md#web_hook_delete) | **DELETE** /webHook | 

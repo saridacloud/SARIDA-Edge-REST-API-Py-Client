@@ -40,6 +40,34 @@ class TestDeviceApi(unittest.TestCase):
         """
         pass
 
+    def test_control_video_player_current_frame_no_get(self):
+        """Test case for control_video_player_current_frame_no_get
+
+        Return the current frame number of the video player.  # noqa: E501
+        """
+        pass
+
+    def test_control_video_player_current_frame_no_put(self):
+        """Test case for control_video_player_current_frame_no_put
+
+        Set the current frame number for the video player.  # noqa: E501
+        """
+        pass
+
+    def test_control_video_player_running_get(self):
+        """Test case for control_video_player_running_get
+
+        Return true if the video player is running, otherwise false.  # noqa: E501
+        """
+        pass
+
+    def test_control_video_player_running_put(self):
+        """Test case for control_video_player_running_put
+
+        Start or pause the video player  # noqa: E501
+        """
+        pass
+
     def test_control_video_player_start_post(self):
         """Test case for control_video_player_start_post
 
