@@ -111,6 +111,7 @@ Class | Method | HTTP request | Description
 *DeviceApi* | [**control_video_player_stop_post**](docs/DeviceApi.md#control_video_player_stop_post) | **POST** /control/videoPlayer/stop | 
 *DeviceApi* | [**web_hook_delete**](docs/DeviceApi.md#web_hook_delete) | **DELETE** /webHook | 
 *DeviceApi* | [**web_hook_detection_updates_post**](docs/DeviceApi.md#web_hook_detection_updates_post) | **POST** /webHook/detectionUpdates | 
+*DeviceApi* | [**web_hook_frame_updates_post**](docs/DeviceApi.md#web_hook_frame_updates_post) | **POST** /webHook/frameUpdates | 
 *DeviceApi* | [**web_hook_get**](docs/DeviceApi.md#web_hook_get) | **GET** /webHook | 
 *GUIApi* | [**control_gui_detection_area_visibility_get**](docs/GUIApi.md#control_gui_detection_area_visibility_get) | **GET** /control/gui/detectionAreaVisibility | 
 *GUIApi* | [**control_gui_detection_area_visibility_post**](docs/GUIApi.md#control_gui_detection_area_visibility_post) | **POST** /control/gui/detectionAreaVisibility | 

@@ -910,6 +910,107 @@ class DeviceApi(object):
             _request_timeout=params.get('_request_timeout'),
             collection_formats=collection_formats)
 
+    def web_hook_frame_updates_post(self, body, webhook_id, **kwargs):  # noqa: E501
+        """web_hook_frame_updates_post  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.web_hook_frame_updates_post(body, webhook_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param WebHookProperties body: (required)
+        :param str webhook_id: 'Web hook name created by requester (ID), to identify ' 'the registered web hook for later calls.' '(e.g.: Generate a new GUID and use it as web hook name)'  (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+        kwargs['_return_http_data_only'] = True
+        if kwargs.get('async_req'):
+            return self.web_hook_frame_updates_post_with_http_info(body, webhook_id, **kwargs)  # noqa: E501
+        else:
+            (data) = self.web_hook_frame_updates_post_with_http_info(body, webhook_id, **kwargs)  # noqa: E501
+            return data
+
+    def web_hook_frame_updates_post_with_http_info(self, body, webhook_id, **kwargs):  # noqa: E501
+        """web_hook_frame_updates_post  # noqa: E501
+
+        This method makes a synchronous HTTP request by default. To make an
+        asynchronous HTTP request, please pass async_req=True
+        >>> thread = api.web_hook_frame_updates_post_with_http_info(body, webhook_id, async_req=True)
+        >>> result = thread.get()
+
+        :param async_req bool
+        :param WebHookProperties body: (required)
+        :param str webhook_id: 'Web hook name created by requester (ID), to identify ' 'the registered web hook for later calls.' '(e.g.: Generate a new GUID and use it as web hook name)'  (required)
+        :return: None
+                 If the method is called asynchronously,
+                 returns the request thread.
+        """
+
+        all_params = ['body', 'webhook_id']  # noqa: E501
+        all_params.append('async_req')
+        all_params.append('_return_http_data_only')
+        all_params.append('_preload_content')
+        all_params.append('_request_timeout')
+
+        params = locals()
+        for key, val in six.iteritems(params['kwargs']):
+            if key not in all_params:
+                raise TypeError(
+                    "Got an unexpected keyword argument '%s'"
+                    " to method web_hook_frame_updates_post" % key
+                )
+            params[key] = val
+        del params['kwargs']
+        # verify the required parameter 'body' is set
+        if ('body' not in params or
+                params['body'] is None):
+            raise ValueError("Missing the required parameter `body` when calling `web_hook_frame_updates_post`")  # noqa: E501
+        # verify the required parameter 'webhook_id' is set
+        if ('webhook_id' not in params or
+                params['webhook_id'] is None):
+            raise ValueError("Missing the required parameter `webhook_id` when calling `web_hook_frame_updates_post`")  # noqa: E501
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'webhook_id' in params:
+            query_params.append(('webhookID', params['webhook_id']))  # noqa: E501
+
+        header_params = {}
+
+        form_params = []
+        local_var_files = {}
+
+        body_params = None
+        if 'body' in params:
+            body_params = params['body']
+        # HTTP header `Content-Type`
+        header_params['Content-Type'] = self.api_client.select_header_content_type(  # noqa: E501
+            ['application/json', 'application/xml'])  # noqa: E501
+
+        # Authentication setting
+        auth_settings = []  # noqa: E501
+
+        return self.api_client.call_api(
+            '/webHook/frameUpdates', 'POST',
+            path_params,
+            query_params,
+            header_params,
+            body=body_params,
+            post_params=form_params,
+            files=local_var_files,
+            response_type=None,  # noqa: E501
+            auth_settings=auth_settings,
+            async_req=params.get('async_req'),
+            _return_http_data_only=params.get('_return_http_data_only'),
+            _preload_content=params.get('_preload_content', True),
+            _request_timeout=params.get('_request_timeout'),
+            collection_formats=collection_formats)
+
     def web_hook_get(self, webhook_id, **kwargs):  # noqa: E501
         """web_hook_get  # noqa: E501
 

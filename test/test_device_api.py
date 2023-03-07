@@ -92,6 +92,12 @@ class TestDeviceApi(unittest.TestCase):
         """
         pass
 
+    def test_web_hook_frame_updates_post(self):
+        """Test case for web_hook_frame_updates_post
+
+        """
+        pass
+
     def test_web_hook_get(self):
         """Test case for web_hook_get
 
