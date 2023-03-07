@@ -28,7 +28,7 @@ class FrameTime(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'time': 'str',
+        'time': 'datetime',
         'frame_no': 'int'
     }
 
@@ -54,7 +54,7 @@ class FrameTime(object):
         UTM  # noqa: E501
 
         :return: The time of this FrameTime.  # noqa: E501
-        :rtype: str
+        :rtype: datetime
         """
         return self._time
 
@@ -65,7 +65,7 @@ class FrameTime(object):
         UTM  # noqa: E501
 
         :param time: The time of this FrameTime.  # noqa: E501
-        :type: str
+        :type: datetime
         """
 
         self._time = time
