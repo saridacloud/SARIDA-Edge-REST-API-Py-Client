@@ -73,6 +73,15 @@ except ApiException as e:
 api_instance = swagger_client.AnalysisApi(swagger_client.ApiClient(configuration))
 
 try:
+    api_response = api_instance.analysis_results_details_mask_get()
+    pprint(api_response)
+except ApiException as e:
+    print("Exception when calling AnalysisApi->analysis_results_details_mask_get: %s\n" % e)
+
+# create an instance of the API class
+api_instance = swagger_client.AnalysisApi(swagger_client.ApiClient(configuration))
+
+try:
     api_response = api_instance.analysis_results_inspection_log_get()
     pprint(api_response)
 except ApiException as e:
@@ -96,6 +105,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *AnalysisApi* | [**analysis_results_current_get**](docs/AnalysisApi.md#analysis_results_current_get) | **GET** /analysis/results/current | 
 *AnalysisApi* | [**analysis_results_details_current_get**](docs/AnalysisApi.md#analysis_results_details_current_get) | **GET** /analysis/results/details/current | 
+*AnalysisApi* | [**analysis_results_details_mask_get**](docs/AnalysisApi.md#analysis_results_details_mask_get) | **GET** /analysis/results/details/mask | 
 *AnalysisApi* | [**analysis_results_inspection_log_get**](docs/AnalysisApi.md#analysis_results_inspection_log_get) | **GET** /analysis/results/inspectionLog | 
 *AnalysisApi* | [**analysis_video_resolution_get**](docs/AnalysisApi.md#analysis_video_resolution_get) | **GET** /analysis/video/resolution | 
 *CameraApi* | [**camera_set_origin_orientation_put**](docs/CameraApi.md#camera_set_origin_orientation_put) | **PUT** /camera/setOriginOrientation | 

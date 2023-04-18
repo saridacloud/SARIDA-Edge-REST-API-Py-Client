@@ -40,6 +40,12 @@ class TestAnalysisApi(unittest.TestCase):
         """
         pass
 
+    def test_analysis_results_details_mask_get(self):
+        """Test case for analysis_results_details_mask_get
+
+        """
+        pass
+
     def test_analysis_results_inspection_log_get(self):
         """Test case for analysis_results_inspection_log_get
 
